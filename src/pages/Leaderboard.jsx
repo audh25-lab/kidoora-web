@@ -15,3 +15,5 @@ export default function Leaderboard(){
     </div>
   );
 }
+import Leaderboard from "./pages/Leaderboard";
+<Route path="/leaderboard" element={<Leaderboard />} />
