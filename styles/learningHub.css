@@ -1,0 +1,9 @@
+/* learningHub.css content (copy earlier final version) */
+.learningHubWrapper { padding:1.2rem; padding-bottom:8rem; background:linear-gradient(180deg,#8ED8FF,#C1F3FF 60%); min-height:100vh; }
+.learningHubTitle { font-family:"Poppins",sans-serif; font-size:2.2rem; margin-bottom:1.5rem; text-align:center; background:linear-gradient(90deg,#007aff,#33d6ff); -webkit-background-clip:text; color:transparent; animation:fadeIn 0.8s ease-in-out; }
+.learningHubGrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(165px,1fr)); gap:1.4rem; animation:slideDown 0.6s ease-in-out; }
+.learnCard { background:#fff; border-radius:22px; padding:1rem 1.2rem; box-shadow:0 8px 22px rgba(0,0,0,0.12); transition:transform .2s ease; cursor:pointer; text-align:center; }
+.learnCard:hover{ transform:translateY(-6px); box-shadow:0 10px 26px rgba(0,0,0,0.18); }
+.learnCard img{ width:85px; margin-bottom:.6rem; filter:drop-shadow(0 4px 8px rgba(0,0,0,.18)); }
+.learnCardTitle{ font-family:"Baloo 2",sans-serif; font-size:1.2rem; color:#444; }
+@media (max-width:480px){ .learningHubGrid{ grid-template-columns:repeat(2,1fr); } .learnCard img{ width:70px; } .learnCardTitle{ font-size:1.1rem; } }
