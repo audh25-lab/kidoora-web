@@ -1,0 +1,132 @@
+/* MODULE PAGE — ultra-premium animated design for KidooraMV */
+
+.modulePageWrapper {
+  padding: 1.4rem;
+  padding-bottom: 7rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #bdefff 0%, #eaffff 100%);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.backBtn {
+  background: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+}
+
+.moduleTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+  background: linear-gradient(90deg, #007aff, #33d6ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.moduleDescription {
+  font-family: "Quicksand", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.moduleMeta {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.sectionTitle {
+  text-align: left;
+  margin: 1.4rem 0 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #005f82;
+}
+
+.lessonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.lessonCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+  position: relative;
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lessonCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.18);
+}
+
+.lessonInfo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.difficultyTag {
+  background: #f0f9ff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #0080c9;
+}
+
+.durationTag {
+  background: #fff6e6;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #c97c00;
+}
+
+.startLessonBtn {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  background: linear-gradient(90deg, #00b4db, #22d6ff);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.startLessonBtn:hover {
+  opacity: 0.9;
+}
+
+.moduleLoading,
+.moduleNotFound {
+  text-align: center;
+  padding-top: 30vh;
+  font-size: 1.4rem;
+  color: #055;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
