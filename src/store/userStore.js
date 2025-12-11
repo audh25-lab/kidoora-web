@@ -26,13 +26,12 @@ export const useUserStore = create((set, get) => ({
     set({ consent });
     persist({ ...get(), consent });
   },
-
-  addReward: (reward) => {
-    const rewards = [...(get().rewards || []), reward];
-    set({ rewards });
-    persist({ ...get(), rewards });
-  },
-
+  
+addReward: (reward) => {
+  const rewards = [...(get().rewards || []), reward];
+  set({ rewards });
+  persist({ ...get(), rewards });
+},
   reset: () => {
     localStorage.removeItem(KEY);
     set({ ageGroup: null, lang: "en", consent: false, progress: {}, rewards: [] });
